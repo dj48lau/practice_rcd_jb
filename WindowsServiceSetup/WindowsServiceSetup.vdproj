@@ -62,6 +62,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.5 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.5"
+                    }
+                }
             }
         }
         "Release"
@@ -159,11 +167,6 @@
             "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
                 "ScatterAssemblies"
                 {
-                    "_2F97C6D496A20AACCE4062C5C1B93FDC"
-                    {
-                    "Name" = "8:System.Net.Http.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:System.Net.Http.dll"
             "TargetName" = "8:"
@@ -238,7 +241,7 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:WindowsServiceSetup"
+        "ProductName" = "8:ScanService"
         "ProductCode" = "8:{1E71A86E-D589-4256-B8C8-BDACB1831E78}"
         "PackageCode" = "8:{2779226B-7FA2-44C4-8805-589C770A7143}"
         "UpgradeCode" = "8:{7E390FEB-7502-4A58-AF5F-AA6F6A416FBC}"
@@ -761,7 +764,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_16F017E2DF2E4F57B917CF19904F4DB1"
             {
-            "SourcePath" = "8:..\\WindowsService1\\obj\\Debug\\WindowsService1.exe"
+            "SourcePath" = "8:..\\WindowsService1\\obj\\Release\\WindowsService1.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_E5B78681B26E40ABA279E2C87A1EC8F0"

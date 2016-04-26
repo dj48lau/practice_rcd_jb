@@ -24,3 +24,7 @@ D:\microsoft\RCD_app\WindowsService1\obj\Debug\WindowsService1.pdb
 E:\.Net Trainning\WorkspaceVisualStudio\RCD_app\WindowsService1\bin\Debug\WindowsService1.exe.config
 E:\.Net Trainning\WorkspaceVisualStudio\RCD_app\WindowsService1\obj\Debug\WindowsService1.exe
 E:\.Net Trainning\WorkspaceVisualStudio\RCD_app\WindowsService1\obj\Debug\WindowsService1.pdb
+E:\.Net Trainning\laur\practice_rcd_jb\WindowsService1\bin\Debug\WindowsService1.exe.config
+E:\.Net Trainning\laur\practice_rcd_jb\WindowsService1\obj\Debug\WindowsService1.csprojResolveAssemblyReference.cache
+E:\.Net Trainning\laur\practice_rcd_jb\WindowsService1\obj\Debug\WindowsService1.ProjectInstaller.resources
+E:\.Net Trainning\laur\practice_rcd_jb\WindowsService1\obj\Debug\WindowsService1.csproj.GenerateResource.Cache

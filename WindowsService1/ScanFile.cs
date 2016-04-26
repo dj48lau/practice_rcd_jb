@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 
 namespace WindowsService1
@@ -6,18 +7,19 @@ namespace WindowsService1
     class ScanFile
     {
 
-        private string shareFolderPath = "D:\\source";
-        private string destinationFolderPath = "D:\\destination";
+        private string shareFolderPath = Util.GetSharedPath();
+        private string destinationFolderPath = Util.GetDestinationPath();
 
         #region processFile
         public void processFile()
         {
+            //Debugger.Launch();
             try
             {
-                //verify to see if the path of the shareFolder exists
+                //verify if the shareFolder exists
                 if (Directory.Exists(shareFolderPath))
                 {
-                    // Get the list of files found in the directory.
+                    //get the list of files found in the directory.
                     string[] scanFolderFiles = Directory.GetFiles(shareFolderPath);
                     if (scanFolderFiles != null)
                     {
@@ -25,7 +27,7 @@ namespace WindowsService1
                         foreach (string f in scanFolderFiles)
                         {
                             fileName = Path.GetFileName(f);
-                       
+
                             processFolder(fileName);
                         }
                     }
@@ -49,11 +51,12 @@ namespace WindowsService1
 
             string fullDestinationPath = Path.Combine(destinationFolderPath, fileExtension);
             string updatedFileName = fileName;
-            try {
+            try
+            {
 
 
                 //craete the directory if it not exist
-                if (!Directory.Exists(destinationFolderPath))
+                if (!Directory.Exists(fullDestinationPath))
                 {
                     // Try to create the directory.
                     try
@@ -64,20 +67,35 @@ namespace WindowsService1
                     {
                         Console.WriteLine("The directory couldn't been created : {0}", e.ToString());
                     }
-                } else
+                }
+                else
                 {
-                    equalContent = checkContentFile(fullSourcePath, fullDestinationPath);
-                    updatedFileName = setFileName(fileName, fileExtension, fullDestinationPath);
-                    
+                    string tmpDestinationFile = fullDestinationPath + Path.DirectorySeparatorChar + fileName;
+                    if (File.Exists(tmpDestinationFile))
+                    {
+                        // is true if the file is already in destination
+                        equalContent = checkContentFile(fullSourcePath, tmpDestinationFile);
+                    }
+
+
+                    if (!equalContent)
+                    {
+                        //rename the file if the name is already used
+                        updatedFileName = setFileName(fileName, fileExtension, fullDestinationPath);
+                    }
+
+
                 }
 
                 //if file is already in destination, delete it
                 if (equalContent == true)
                 {
                     deleteFile(fullSourcePath);
-                } else 
+                }
+                else
                 {
                     fullDestinationPath = Path.Combine(fullDestinationPath, updatedFileName);
+
                     moveFile(fullSourcePath, fullDestinationPath);
                 }
             }
@@ -85,7 +103,7 @@ namespace WindowsService1
             {
                 Console.WriteLine(ex.Message);
             }
-            
+
         }
         #endregion
 
@@ -99,7 +117,7 @@ namespace WindowsService1
 
             string baseNewFullPath = newFullPath;
             newFullPath = newFullPath + Path.DirectorySeparatorChar + tempFileName;
-         
+
             //while there is a file with the same name
             while (File.Exists(newFullPath + extensionWithDot))
             {
@@ -116,49 +134,43 @@ namespace WindowsService1
         #region checkContentFile
         public Boolean checkContentFile(string fullSourcePath, string destinationPath)
         {
-         
-            foreach (string f in Directory.GetFiles(destinationPath))
+            using (var reader1 = new FileStream(fullSourcePath, FileMode.Open, FileAccess.Read))
             {
-                using (var reader1 = new FileStream(fullSourcePath, System.IO.FileMode.Open, System.IO.FileAccess.Read))
+                using (var reader2 = new FileStream(destinationPath, FileMode.Open, FileAccess.Read))
                 {
-                    using (var reader2 = new FileStream(f, System.IO.FileMode.Open, System.IO.FileAccess.Read))
+                    byte[] hash1;
+                    byte[] hash2;
+
+                    using (var md51 = new System.Security.Cryptography.MD5CryptoServiceProvider())
                     {
-                        byte[] hash1;
-                        byte[] hash2;
-
-                        using (var md51 = new System.Security.Cryptography.MD5CryptoServiceProvider())
-                        {
-                            md51.ComputeHash(reader1);
-                            hash1 = md51.Hash;
-                        }
-
-                        using (var md52 = new System.Security.Cryptography.MD5CryptoServiceProvider())
-                        {
-                            md52.ComputeHash(reader2);
-                            hash2 = md52.Hash;
-                        }
-
-                        int j = 0;
-                        for (j = 0; j < hash1.Length; j++)
-                        {
-                            if (hash1[j] != hash2[j])
-                            {
-                                break;
-                            }
-                        }
-
-                        //if both hashed contents are identical
-                        if (j == hash1.Length)
-                        {
-                            return true;
-                        }
-
-                        return false;
+                        md51.ComputeHash(reader1);
+                        hash1 = md51.Hash;
                     }
-                }
 
+                    using (var md52 = new System.Security.Cryptography.MD5CryptoServiceProvider())
+                    {
+                        md52.ComputeHash(reader2);
+                        hash2 = md52.Hash;
+                    }
+
+                    int j = 0;
+                    for (j = 0; j < hash1.Length; j++)
+                    {
+                        if (hash1[j] != hash2[j])
+                        {
+                            break;
+                        }
+                    }
+
+                    //if both hashed contents are identical
+                    if (j == hash1.Length)
+                    {
+                        return true;
+                    }
+
+                    return false;
+                }
             }
-            return false;
         }
         #endregion
 
@@ -172,7 +184,7 @@ namespace WindowsService1
             }
             catch (Exception)
             {
-                throw new FileNotFoundException("The file couldn't been deleted!");
+                Console.WriteLine("The file couldn't been deleted!");
             }
         }
         #endregion
@@ -189,7 +201,7 @@ namespace WindowsService1
             }
             catch (Exception)
             {
-                throw new FileNotFoundException("The file couldn't been moved!");
+                Console.WriteLine("The file couldn't been moved!");
             }
         }
         #endregion
