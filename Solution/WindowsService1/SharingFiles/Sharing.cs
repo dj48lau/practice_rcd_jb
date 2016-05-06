@@ -1,5 +1,5 @@
-﻿using Netrom.WindowsService.Utils;
-using Netrom.WindowsService.SharingFiles;
+﻿using RCD.Application.Utils;
+using RCD.Application.SharingFiles;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace Netrom.WindowsService.SharingFiles
+namespace RCD.Application.SharingFiles
 {
     /// <summary>
     /// This class is responsible for the sharing process

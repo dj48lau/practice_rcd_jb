@@ -3,7 +3,7 @@
 "VSVersion" = "3:800"
 "ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
 "IsWebType" = "8:FALSE"
-"ProjectName" = "8:Netrom.WindowsServiceSetup"
+"ProjectName" = "8:RCD.WindowsServiceSetup"
 "LanguageId" = "3:1033"
 "CodePage" = "3:1252"
 "UILanguageId" = "3:1033"
@@ -769,7 +769,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_16F017E2DF2E4F57B917CF19904F4DB1"
             {
-            "SourcePath" = "8:..\\WindowsService1\\obj\\Release\\Netrom.WindowsService.exe"
+            "SourcePath" = "8:..\\WindowsService1\\obj\\Debug\\Netrom.WindowsService.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_E5B78681B26E40ABA279E2C87A1EC8F0"

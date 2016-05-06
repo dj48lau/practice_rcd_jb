@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections.Specialized;
 
-namespace Netrom.WindowsService.Utils
+namespace RCD.Application.Utils
 {
     class Util
     {

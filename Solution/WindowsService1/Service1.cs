@@ -1,10 +1,10 @@
-﻿using Netrom.WindowsService.SharingFiles;
+﻿using RCD.Application.SharingFiles;
 using System;
 using System.ServiceProcess;
 using System.Timers;
 
 
-namespace Netrom.WindowsService
+namespace RCD.Application
 {
 
     public partial class Service1 : ServiceBase

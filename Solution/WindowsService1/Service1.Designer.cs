@@ -1,4 +1,4 @@
-﻿namespace Netrom.WindowsService
+﻿namespace RCD.Application
 {
     partial class Service1
     {

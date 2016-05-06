@@ -1,0 +1,5 @@
+C:\Users\j.n.bratu\Desktop\RCD\Application\RCD\RCD.BL\bin\Debug\RCD.BL.dll
+C:\Users\j.n.bratu\Desktop\RCD\Application\RCD\RCD.BL\bin\Debug\RCD.BL.pdb
+C:\Users\j.n.bratu\Desktop\RCD\Application\RCD\RCD.BL\obj\Debug\RCD.BL.csprojResolveAssemblyReference.cache
+C:\Users\j.n.bratu\Desktop\RCD\Application\RCD\RCD.BL\obj\Debug\RCD.BL.dll
+C:\Users\j.n.bratu\Desktop\RCD\Application\RCD\RCD.BL\obj\Debug\RCD.BL.pdb

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Netrom.WindowsService.Utils
+namespace RCD.Application.Utils
 {
     class FileAction
     {

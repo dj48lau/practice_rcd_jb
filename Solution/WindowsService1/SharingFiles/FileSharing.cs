@@ -1,4 +1,4 @@
-﻿using Netrom.WindowsService.Utils;
+﻿using RCD.Application.Utils;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Netrom.WindowsService.SharingFiles
+namespace RCD.Application.SharingFiles
 {
     /// <summary>
     /// This class is responsible for the file's transaction
