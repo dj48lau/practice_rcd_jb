@@ -31,3 +31,20 @@ C:\Users\j.n.bratu\Desktop\RCD\Application\RCD\RCD.Model\obj\Debug\RCD.Model.Mig
 C:\Users\j.n.bratu\Desktop\RCD\Application\RCD\RCD.Model\obj\Debug\RCD.Model.csproj.GenerateResource.Cache
 C:\Users\j.n.bratu\Desktop\RCD\Application\RCD\RCD.Model\obj\Debug\RCD.Model.dll
 C:\Users\j.n.bratu\Desktop\RCD\Application\RCD\RCD.Model\obj\Debug\RCD.Model.pdb
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.Model\bin\Debug\RCD.Model.dll.config
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.Model\bin\Debug\RCD.Model.dll
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.Model\bin\Debug\RCD.Model.pdb
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.Model\bin\Debug\EntityFramework.dll
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.Model\bin\Debug\EntityFramework.xml
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.Model\obj\Debug\RCD.Model.csprojResolveAssemblyReference.cache
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.Model\obj\Debug\RCD.Model.Migrations.tbl_file.resources
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.Model\obj\Debug\RCD.Model.Migrations.tbl_user.resources
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.Model\obj\Debug\RCD.Model.Migrations.tbl_file_type.resources
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.Model\obj\Debug\RCD.Model.Migrations.tbl_metadata.resources
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.Model\obj\Debug\RCD.Model.Migrations.tbl_metadata_type.resources
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.Model\obj\Debug\RCD.Model.Migrations.tbl_setting.resources
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.Model\obj\Debug\RCD.Model.csproj.GenerateResource.Cache
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.Model\obj\Debug\RCD.Model.dll
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.Model\obj\Debug\RCD.Model.pdb

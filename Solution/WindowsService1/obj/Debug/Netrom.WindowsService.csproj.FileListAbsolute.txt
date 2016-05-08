@@ -1,1 +1,0 @@
-D:\Work\PracticeRCD\Solution\WindowsService1\bin\Debug\Netrom.WindowsService.exe.config
