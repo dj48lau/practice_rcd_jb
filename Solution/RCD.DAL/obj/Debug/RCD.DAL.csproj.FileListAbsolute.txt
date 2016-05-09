@@ -3,3 +3,17 @@ C:\Users\j.n.bratu\Desktop\RCD\Application\RCD\RCD.DAL\bin\Debug\RCD.DAL.pdb
 C:\Users\j.n.bratu\Desktop\RCD\Application\RCD\RCD.DAL\obj\Debug\RCD.DAL.csprojResolveAssemblyReference.cache
 C:\Users\j.n.bratu\Desktop\RCD\Application\RCD\RCD.DAL\obj\Debug\RCD.DAL.dll
 C:\Users\j.n.bratu\Desktop\RCD\Application\RCD\RCD.DAL\obj\Debug\RCD.DAL.pdb
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.DAL\bin\Debug\RCD.DAL.dll.config
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.DAL\bin\Debug\RCD.DAL.dll
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.DAL\bin\Debug\RCD.DAL.pdb
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.DAL\bin\Debug\EntityFramework.dll
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.DAL\bin\Debug\RCD.Model.dll
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.DAL\bin\Debug\RCD.Model.pdb
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.DAL\bin\Debug\EntityFramework.xml
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.DAL\obj\Debug\RCD.DAL.csprojResolveAssemblyReference.cache
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.DAL\obj\Debug\RCD.DAL.dll
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.DAL\obj\Debug\RCD.DAL.pdb
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.DAL\obj\Debug\RCD.Model.Migrations.initial_tbl.resources
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.DAL\obj\Debug\RCD.DAL.csproj.GenerateResource.Cache

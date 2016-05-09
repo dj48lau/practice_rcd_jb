@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RCD.Model
+namespace RCD.DAL
 {
     public class ModelContext : DbContext
     {

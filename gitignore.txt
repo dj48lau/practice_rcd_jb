@@ -1,0 +1,3 @@
+/Solution/.vs
+/Solution/WindowsService1/bin
+/Solution/WindowsService1/obj

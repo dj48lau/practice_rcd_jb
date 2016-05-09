@@ -49,37 +49,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="File.cs" />
     <Compile Include="FileType.cs" />
     <Compile Include="Metadata.cs" />
     <Compile Include="MetadataType.cs" />
-    <Compile Include="Migrations\201605022354069_tbl_file.cs" />
-    <Compile Include="Migrations\201605022354069_tbl_file.Designer.cs">
-      <DependentUpon>201605022354069_tbl_file.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605022356100_tbl_user.cs" />
-    <Compile Include="Migrations\201605022356100_tbl_user.Designer.cs">
-      <DependentUpon>201605022356100_tbl_user.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605022358163_tbl_file_type.cs" />
-    <Compile Include="Migrations\201605022358163_tbl_file_type.Designer.cs">
-      <DependentUpon>201605022358163_tbl_file_type.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605030000001_tbl_metadata.cs" />
-    <Compile Include="Migrations\201605030000001_tbl_metadata.Designer.cs">
-      <DependentUpon>201605030000001_tbl_metadata.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605030001430_tbl_metadata_type.cs" />
-    <Compile Include="Migrations\201605030001430_tbl_metadata_type.Designer.cs">
-      <DependentUpon>201605030001430_tbl_metadata_type.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605030003165_tbl_setting.cs" />
-    <Compile Include="Migrations\201605030003165_tbl_setting.Designer.cs">
-      <DependentUpon>201605030003165_tbl_setting.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="ModelContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Setting.cs" />
     <Compile Include="User.cs" />
@@ -87,26 +60,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201605022354069_tbl_file.resx">
-      <DependentUpon>201605022354069_tbl_file.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605022356100_tbl_user.resx">
-      <DependentUpon>201605022356100_tbl_user.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605022358163_tbl_file_type.resx">
-      <DependentUpon>201605022358163_tbl_file_type.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605030000001_tbl_metadata.resx">
-      <DependentUpon>201605030000001_tbl_metadata.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605030001430_tbl_metadata_type.resx">
-      <DependentUpon>201605030001430_tbl_metadata_type.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605030003165_tbl_setting.resx">
-      <DependentUpon>201605030003165_tbl_setting.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
