@@ -1,4 +1,4 @@
-namespace RCD.Model.Migrations
+namespace RCD.DAL.Migrations
 {
     using System;
     using System.Data.Entity;

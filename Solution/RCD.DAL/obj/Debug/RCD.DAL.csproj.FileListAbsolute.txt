@@ -15,5 +15,5 @@ E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.DAL\bin\Debug\EntityFramewor
 E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.DAL\obj\Debug\RCD.DAL.csprojResolveAssemblyReference.cache
 E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.DAL\obj\Debug\RCD.DAL.dll
 E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.DAL\obj\Debug\RCD.DAL.pdb
-E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.DAL\obj\Debug\RCD.Model.Migrations.initial_tbl.resources
+E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.DAL\obj\Debug\RCD.DAL.Migrations.init_tbl.resources
 E:\.Net Trainning\laur\practice_rcd_jb\Solution\RCD.DAL\obj\Debug\RCD.DAL.csproj.GenerateResource.Cache

@@ -1,12 +1,28 @@
-namespace RCD.Model.Migrations
+namespace RCD.DAL.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class initial_tbl : DbMigration
+    public partial class init_tbl : DbMigration
     {
         public override void Up()
         {
+            CreateTable(
+                "dbo.tblFile",
+                c => new
+                    {
+                        FileID = c.Int(nullable: false, identity: true),
+                        Path = c.String(nullable: false),
+                        Name = c.String(nullable: false),
+                        UserID = c.Int(nullable: false),
+                        FileTypeID = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.FileID)
+                .ForeignKey("dbo.tblFileType", t => t.FileTypeID, cascadeDelete: true)
+                .ForeignKey("dbo.tblUser", t => t.UserID, cascadeDelete: true)
+                .Index(t => t.UserID)
+                .Index(t => t.FileTypeID);
+            
             CreateTable(
                 "dbo.tblFileType",
                 c => new
@@ -63,12 +79,6 @@ namespace RCD.Model.Migrations
                     })
                 .PrimaryKey(t => t.SettingID);
             
-            AddColumn("dbo.tblFile", "UserID", c => c.Int(nullable: false));
-            AddColumn("dbo.tblFile", "FileTypeID", c => c.Int(nullable: false));
-            CreateIndex("dbo.tblFile", "UserID");
-            CreateIndex("dbo.tblFile", "FileTypeID");
-            AddForeignKey("dbo.tblFile", "FileTypeID", "dbo.tblFileType", "FileTypeID", cascadeDelete: true);
-            AddForeignKey("dbo.tblFile", "UserID", "dbo.tblUser", "UserID", cascadeDelete: true);
         }
         
         public override void Down()
@@ -83,13 +93,12 @@ namespace RCD.Model.Migrations
             DropIndex("dbo.tblUser", new[] { "Username" });
             DropIndex("dbo.tblFile", new[] { "FileTypeID" });
             DropIndex("dbo.tblFile", new[] { "UserID" });
-            DropColumn("dbo.tblFile", "FileTypeID");
-            DropColumn("dbo.tblFile", "UserID");
             DropTable("dbo.tblSetting");
             DropTable("dbo.tblMetadataType");
             DropTable("dbo.tblMetadata");
             DropTable("dbo.tblUser");
             DropTable("dbo.tblFileType");
+            DropTable("dbo.tblFile");
         }
     }
 }

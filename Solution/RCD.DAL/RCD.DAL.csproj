@@ -29,6 +29,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
@@ -49,9 +52,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201605091943134_initial_tbl.cs" />
-    <Compile Include="Migrations\201605091943134_initial_tbl.Designer.cs">
-      <DependentUpon>201605091943134_initial_tbl.cs</DependentUpon>
+    <Compile Include="ManagingFileType.cs" />
+    <Compile Include="Migrations\201605101933567_init_tbl.cs" />
+    <Compile Include="Migrations\201605101933567_init_tbl.Designer.cs">
+      <DependentUpon>201605101933567_init_tbl.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelContext.cs" />
@@ -68,8 +72,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201605091943134_initial_tbl.resx">
-      <DependentUpon>201605091943134_initial_tbl.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201605101933567_init_tbl.resx">
+      <DependentUpon>201605101933567_init_tbl.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
