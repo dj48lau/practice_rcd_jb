@@ -14,14 +14,14 @@ namespace RCD.DAL.Migrations
                         FileID = c.Int(nullable: false, identity: true),
                         Path = c.String(nullable: false),
                         Name = c.String(nullable: false),
-                        UserID = c.Int(nullable: false),
-                        FileTypeID = c.Int(nullable: false),
+                        FileType_FileTypeId = c.Int(),
+                        User_UserId = c.Int(),
                     })
                 .PrimaryKey(t => t.FileID)
-                .ForeignKey("dbo.tblFileType", t => t.FileTypeID, cascadeDelete: true)
-                .ForeignKey("dbo.tblUser", t => t.UserID, cascadeDelete: true)
-                .Index(t => t.UserID)
-                .Index(t => t.FileTypeID);
+                .ForeignKey("dbo.tblFileType", t => t.FileType_FileTypeId)
+                .ForeignKey("dbo.tblUser", t => t.User_UserId)
+                .Index(t => t.FileType_FileTypeId)
+                .Index(t => t.User_UserId);
             
             CreateTable(
                 "dbo.tblFileType",
@@ -85,14 +85,14 @@ namespace RCD.DAL.Migrations
         {
             DropForeignKey("dbo.tblMetadata", "MetadataTypeID", "dbo.tblMetadataType");
             DropForeignKey("dbo.tblMetadata", "FileID", "dbo.tblFile");
-            DropForeignKey("dbo.tblFile", "UserID", "dbo.tblUser");
-            DropForeignKey("dbo.tblFile", "FileTypeID", "dbo.tblFileType");
+            DropForeignKey("dbo.tblFile", "User_UserId", "dbo.tblUser");
+            DropForeignKey("dbo.tblFile", "FileType_FileTypeId", "dbo.tblFileType");
             DropIndex("dbo.tblMetadata", new[] { "MetadataTypeID" });
             DropIndex("dbo.tblMetadata", new[] { "FileID" });
             DropIndex("dbo.tblUser", new[] { "Password" });
             DropIndex("dbo.tblUser", new[] { "Username" });
-            DropIndex("dbo.tblFile", new[] { "FileTypeID" });
-            DropIndex("dbo.tblFile", new[] { "UserID" });
+            DropIndex("dbo.tblFile", new[] { "User_UserId" });
+            DropIndex("dbo.tblFile", new[] { "FileType_FileTypeId" });
             DropTable("dbo.tblSetting");
             DropTable("dbo.tblMetadataType");
             DropTable("dbo.tblMetadata");

@@ -1,49 +1,26 @@
 ﻿using System.ServiceProcess;
 using System;
 using RCD.DAL;
+using RCD.BL;
+using RCD.Model;
+using System.Collections.Generic;
+using RCD.BL.Services;
 
-namespace RCD.Application
+namespace RCD.WindowsService
 {
     static class MainProgram
     {
-
+        
         static void Main()
         {
 
 #if DEBUG
-            ////TODO: verify if type is already in db
-            ManagingFileType.addFileType("txt");
-            ManagingFileType.addFileType("pdf");
-            ManagingFileType.addFileType("docx");
-            ManagingFileType.addFileType("xlsx");
-            ManagingFileType.addFileType("jpg");
-            ManagingFileType.addFileType("bmp");
 
-            // Service1 myService = new Service1();
-            // myService.OnDebug();
-            //  System.Threading.Thread.Sleep(System.Threading.Timeout.Infinite); //keep the service alive
+            Service1 myService = new Service1();
+            myService.OnDebug();
+            System.Threading.Thread.Sleep(System.Threading.Timeout.Infinite); //keep the service alive
 
-            // using (var db = new ModelContext())
-            //  {
-            // Create and save a new file type 
-            //     var fileType = new FileType { Name = "txt"};
-            //     db.FileType.Add(fileType);
-            //     db.SaveChanges();
-            // var query = from type in db.FileType
-            //  orderby type.Name
-            //   select type;
-
-            //  Console.WriteLine("All types in the database:");
-            //  foreach (var item in query)
-            //  {
-            //      Console.WriteLine(item.Name);
-            //  }
-
-            //  Console.WriteLine("Press any key to exit...");
-            //  Console.ReadKey();
         }
-
-
 
 #else
         ServiceBase[] ServicesToRun;

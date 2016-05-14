@@ -14,12 +14,12 @@ namespace RCD.DAL
         {
         }
 
-        public DbSet<File> File { get; set; }
-        public DbSet<User> User { get; set; }
-        public DbSet<FileType> FileType { get; set; }
+        public DbSet<File> Files { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<FileType> FileTypes { get; set; }
         public DbSet<Metadata> Metadata { get; set; }
-        public DbSet<MetadataType> MetadataType { get; set; }
-        public DbSet<Setting> Setting { get; set; }
+        public DbSet<MetadataType> MetadataTypes { get; set; }
+        public DbSet<Setting> Settings { get; set; }
 
-    }
+   }
 }

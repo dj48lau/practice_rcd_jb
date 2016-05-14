@@ -1,14 +1,15 @@
-﻿using RCD.Application.Utils;
-using RCD.Application.SharingFiles;
+﻿using RCD.BL;
+using RCD.WindowsService.SharingFiles;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 
-namespace RCD.Application.SharingFiles
+namespace RCD.WindowsService.SharingFiles
 {
     /// <summary>
     /// This class is responsible for the sharing process
@@ -26,8 +27,8 @@ namespace RCD.Application.SharingFiles
         /// </summary>
         public Sharing()
         {
-            _sharedFolder      = Util.GetSharedPath();
-            _destinationFolder = Util.GetDestinationPath();
+            _sharedFolder      = GetSharedPath();
+            _destinationFolder = GetDestinationPath();
         }
 
         public void StartSharing()
@@ -61,6 +62,48 @@ namespace RCD.Application.SharingFiles
             {
                 Console.WriteLine(ex.Message);
             }
+        }
+
+        /// <summary>
+        /// Get the destination folder path from the configuration
+        /// </summary>
+        /// <returns>The destination path</returns>
+        private static string GetDestinationPath()
+        {
+            string destinationFolder = String.Empty;
+
+            try
+            {
+                destinationFolder = ConfigurationManager.AppSettings["destinationFolder"];
+            }
+
+            catch (Exception)
+            {
+                Console.WriteLine("Destination path is missing.");
+            }
+
+            return destinationFolder;
+        }
+
+        /// <summary>
+        /// Get the shared folder path from the configuration
+        /// </summary>
+        /// <returns>The shared path</returns>
+        private static string GetSharedPath()
+        {
+            string sharedFolder = String.Empty;
+
+            try
+            {
+                sharedFolder = ConfigurationManager.AppSettings["sharedFolder"];
+            }
+
+            catch (Exception)
+            {
+                Console.WriteLine("Shared path is missing.");
+            }
+
+            return sharedFolder;
         }
     }
 }

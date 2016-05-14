@@ -13,7 +13,7 @@ namespace RCD.DAL.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201605101933567_init_tbl"; }
+            get { return "201605131359323_init_tbl"; }
         }
         
         string IMigrationMetadata.Source

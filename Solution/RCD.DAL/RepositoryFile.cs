@@ -1,31 +1,27 @@
-﻿using System;
+﻿using RCD.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RCD.Model;
 
 namespace RCD.DAL
 {
-    public class ManagingFileType
+    public class RepositoryFile
     {
-        public static void addFileType(string type)
+        public static void SaveFileInDb(File file, int ext)
         {
 
-          
+
             //create DBContext object
             using (var dbCtx = new ModelContext())
             {
-                // create new type entity object 
-                var newType = new FileType();
-
-                //set type name
-                newType.Name = type;
-
                 try
                 {
-                    //Add Type object into FileType DBset
-                    dbCtx.FileType.Add(newType);
+                    file.User = dbCtx.Users.FirstOrDefault(usr => usr.UserId == 1);
+                    file.FileType = dbCtx.FileTypes.FirstOrDefault(ft => ft.FileTypeId == ext);
+                    //Add File object into File DBset
+                    dbCtx.Files.Add(file);
 
                     // call SaveChanges method to save type into database
                     dbCtx.SaveChanges();

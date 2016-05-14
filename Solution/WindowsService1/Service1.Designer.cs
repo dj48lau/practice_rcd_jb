@@ -1,4 +1,4 @@
-﻿namespace RCD.Application
+﻿namespace RCD.WindowsService
 {
     partial class Service1
     {

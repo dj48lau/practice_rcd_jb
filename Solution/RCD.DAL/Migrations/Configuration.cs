@@ -26,6 +26,7 @@ namespace RCD.DAL.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+            context.Users.AddOrUpdate(p => p.Username, new Model.User { Username = "Andrew Peters", Password = "pasda", IsActive = true, IsAdmin = true });
         }
     }
 }

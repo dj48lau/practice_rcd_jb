@@ -4,10 +4,13 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RCD.Model;
+using RCD.BL;
+using RCD.BL.Services;
 
-namespace RCD.Application.Utils
+namespace RCD.BL.Services
 {
-    class FileAction
+    public class FileAction
     {
         #region FilesCompare
         /// <summary>
@@ -62,7 +65,7 @@ namespace RCD.Application.Utils
         /// <summary>
         /// Delete the file
         /// </summary>
-        /// <param name="filePath">File location</param>
+        /// <param name="filePath">Files location</param>
         public static void DeleteFile(string filePath)
         {
             try
@@ -75,20 +78,22 @@ namespace RCD.Application.Utils
             }
         }
         #endregion
-
-
+        
         #region MoveFile()
         /// <summary>
         /// Move file
         /// </summary>
-        /// <param name="filePath">File location</param>
+        /// <param name="filePath">Files location</param>
         /// <param name="destinationPath">Destination location</param>
         public static void MoveFile(string filePath, string destinationPath)
         {
             try
             {
                 //To move a file or folder to a new location:
-                File.Move(filePath, destinationPath);
+                System.IO.File.Move(filePath, destinationPath);
+
+                FileService.AddFile(destinationPath);
+
             }
             catch (Exception)
             {

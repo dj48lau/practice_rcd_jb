@@ -1,4 +1,6 @@
-﻿using RCD.Application.Utils;
+﻿using RCD.BL;
+using RCD.BL.Services;
+using RCD.BL.Utils;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RCD.Application.SharingFiles
+namespace RCD.WindowsService.SharingFiles
 {
     /// <summary>
     /// This class is responsible for the file's transaction
@@ -20,10 +22,12 @@ namespace RCD.Application.SharingFiles
         private string _fileExtensionWithoutDot;
         #endregion
 
+        FileService fileService = new FileService();
+
         /// <summary>
         /// Constructor; initialize the private variables
         /// </summary>
-        /// <param name="fileName">File name</param>
+        /// <param name="fileName">Files name</param>
         /// <param name="sharedFolder">Shared folder path</param>
         /// <param name="destinationFolder">Destination folder path</param>
         public FileSharing(string fileName, string sharedFolder, string destinationFolder)
@@ -86,7 +90,6 @@ namespace RCD.Application.SharingFiles
                 } else
                 {
                     string fullDestinationPath = Path.Combine(_destinationFolder, newFileName);
-
                     FileAction.MoveFile(fileFullPath, fullDestinationPath);
                 }
             }
@@ -98,6 +101,7 @@ namespace RCD.Application.SharingFiles
         }
         #endregion
 
+        
         /// <summary>
         /// Verify if is another file in the transition folder with the same name
         /// </summary>

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace RCD.Model
 {
     [Table("tblFile")]
@@ -22,19 +23,9 @@ namespace RCD.Model
         [Required()]
         public string Name { get; set; }
 
-        [ForeignKey("User")]
-        [Column("UserID")]
-        [Required()]
-        public int UserId { get; set; }
+        public virtual User User { get; set; }
 
-        public User User { get; set; }
-
-        [ForeignKey("FileType")]
-        [Column("FileTypeID")]
-        [Required()]
-        public int FileTypeId { get; set; }
-
-        public FileType FileType { get; set; }
+        public virtual FileType FileType { get; set; }
 
     }
 }

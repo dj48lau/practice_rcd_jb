@@ -52,12 +52,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ManagingFileType.cs" />
-    <Compile Include="Migrations\201605101933567_init_tbl.cs" />
-    <Compile Include="Migrations\201605101933567_init_tbl.Designer.cs">
-      <DependentUpon>201605101933567_init_tbl.cs</DependentUpon>
+    <Compile Include="Migrations\201605131359323_init_tbl.cs" />
+    <Compile Include="Migrations\201605131359323_init_tbl.Designer.cs">
+      <DependentUpon>201605131359323_init_tbl.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="RepositoryFile.cs" />
+    <Compile Include="RepositoryFileType.cs" />
     <Compile Include="ModelContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -72,8 +73,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201605101933567_init_tbl.resx">
-      <DependentUpon>201605101933567_init_tbl.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201605131359323_init_tbl.resx">
+      <DependentUpon>201605131359323_init_tbl.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

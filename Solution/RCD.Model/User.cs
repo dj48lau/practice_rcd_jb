@@ -11,6 +11,12 @@ namespace RCD.Model
     [Table("tblUser")]
     public class User
     {
+
+        public User()
+        {
+            Files = new List<File>();
+        }
+
         [Key]
         [Column("UserID")]
         public int UserId { get; set; }
@@ -29,6 +35,7 @@ namespace RCD.Model
 
         public bool IsAdmin { get; set; }
 
+        public virtual List<File> Files { get; set; }
 
     }
 }

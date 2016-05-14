@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
 
-namespace RCD.Application.SharingFiles
+namespace RCD.WindowsService.SharingFiles
 {
     /// <summary>
     /// This class is responsible for initialize and start the cron

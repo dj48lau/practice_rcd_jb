@@ -1,10 +1,10 @@
-﻿using RCD.Application.SharingFiles;
+﻿using RCD.WindowsService.SharingFiles;
 using System;
 using System.ServiceProcess;
 using System.Timers;
 
 
-namespace RCD.Application
+namespace RCD.WindowsService
 {
 
     public partial class Service1 : ServiceBase
@@ -26,7 +26,7 @@ namespace RCD.Application
 
         protected override void OnStop()
         {
-            //System.IO.File.Create(AppDomain.CurrentDomain.BaseDirectory + "OnStop.txt");
+            //System.IO.Files.Create(AppDomain.CurrentDomain.BaseDirectory + "OnStop.txt");
         }
 
         /// <summary>
