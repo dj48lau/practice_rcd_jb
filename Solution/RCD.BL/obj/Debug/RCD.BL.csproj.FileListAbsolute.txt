@@ -55,3 +55,17 @@ D:\Work\PracticeRCD\Solution\RCD.BL\obj\Debug\RCD.BL.dll
 D:\Work\PracticeRCD\Solution\RCD.BL\obj\Debug\RCD.BL.pdb
 D:\Work\PracticeRCD\Solution\RCD.BL\bin\Debug\EntityFramework.SqlServer.dll
 D:\Work\PracticeRCD\Solution\RCD.BL\bin\Debug\EntityFramework.SqlServer.xml
+E:\.Net Trainning\laur\practice_jb\Solution\RCD.BL\bin\Debug\RCD.BL.dll.config
+E:\.Net Trainning\laur\practice_jb\Solution\RCD.BL\bin\Debug\RCD.BL.dll
+E:\.Net Trainning\laur\practice_jb\Solution\RCD.BL\bin\Debug\RCD.BL.pdb
+E:\.Net Trainning\laur\practice_jb\Solution\RCD.BL\bin\Debug\EntityFramework.dll
+E:\.Net Trainning\laur\practice_jb\Solution\RCD.BL\bin\Debug\EntityFramework.SqlServer.dll
+E:\.Net Trainning\laur\practice_jb\Solution\RCD.BL\bin\Debug\RCD.DAL.dll
+E:\.Net Trainning\laur\practice_jb\Solution\RCD.BL\bin\Debug\RCD.Model.dll
+E:\.Net Trainning\laur\practice_jb\Solution\RCD.BL\bin\Debug\RCD.DAL.pdb
+E:\.Net Trainning\laur\practice_jb\Solution\RCD.BL\bin\Debug\RCD.Model.pdb
+E:\.Net Trainning\laur\practice_jb\Solution\RCD.BL\bin\Debug\EntityFramework.xml
+E:\.Net Trainning\laur\practice_jb\Solution\RCD.BL\bin\Debug\EntityFramework.SqlServer.xml
+E:\.Net Trainning\laur\practice_jb\Solution\RCD.BL\obj\Debug\RCD.BL.csprojResolveAssemblyReference.cache
+E:\.Net Trainning\laur\practice_jb\Solution\RCD.BL\obj\Debug\RCD.BL.dll
+E:\.Net Trainning\laur\practice_jb\Solution\RCD.BL\obj\Debug\RCD.BL.pdb

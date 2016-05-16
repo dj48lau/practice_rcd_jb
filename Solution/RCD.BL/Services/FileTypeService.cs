@@ -29,7 +29,5 @@ namespace RCD.BL.Services
             return fileTypeId;
         }
 
-
-
     }
 }

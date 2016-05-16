@@ -57,10 +57,12 @@
       <DependentUpon>201605131359323_init_tbl.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="RepositoryFile.cs" />
-    <Compile Include="RepositoryFileType.cs" />
+    <Compile Include="Repositories\RepositoryFile.cs" />
+    <Compile Include="Repositories\RepositoryFileType.cs" />
     <Compile Include="ModelContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\RepositoryMetadata.cs" />
+    <Compile Include="Repositories\RepositoryMetadataType.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

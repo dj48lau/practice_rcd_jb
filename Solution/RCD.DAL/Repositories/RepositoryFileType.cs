@@ -26,7 +26,7 @@ namespace RCD.DAL
                 }
                 catch (Exception)
                 {
-                    return 0;
+                    throw;
                 }
 
                 return fileType.FileTypeId;

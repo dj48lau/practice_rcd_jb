@@ -9,27 +9,26 @@ namespace RCD.DAL
 {
     public class RepositoryFile
     {
-        public static void SaveFileInDb(File file, int ext)
+        public static int SaveFileInDb(File file, int extensionId)
         {
-
-
             //create DBContext object
             using (var dbCtx = new ModelContext())
             {
                 try
                 {
                     file.User = dbCtx.Users.FirstOrDefault(usr => usr.UserId == 1);
-                    file.FileType = dbCtx.FileTypes.FirstOrDefault(ft => ft.FileTypeId == ext);
+                    file.FileType = dbCtx.FileTypes.FirstOrDefault(ft => ft.FileTypeId == extensionId);
                     //Add File object into File DBset
                     dbCtx.Files.Add(file);
 
                     // call SaveChanges method to save type into database
                     dbCtx.SaveChanges();
+                    return file.FileId;
                 }
                 catch (Exception)
                 {
 
-                    throw;
+                    return 0;
                 }
 
             }

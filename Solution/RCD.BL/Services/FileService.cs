@@ -23,8 +23,8 @@ namespace RCD.BL.Services
             file.Name = fileInfo.Name;
             file.Path = destinationFile;
 
-            RepositoryFile.SaveFileInDb(file, GetFileExtensionId(fileInfo));
-
+            var fileId = RepositoryFile.SaveFileInDb(file, GetFileExtensionId(fileInfo));
+            MetadataService.AddMetadata(fileInfo, fileId);
         }
 
         private static int GetFileExtensionId(FileInfo fileInfo)

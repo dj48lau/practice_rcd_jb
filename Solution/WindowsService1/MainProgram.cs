@@ -15,7 +15,6 @@ namespace RCD.WindowsService
         {
 
 #if DEBUG
-
             Service1 myService = new Service1();
             myService.OnDebug();
             System.Threading.Thread.Sleep(System.Threading.Timeout.Infinite); //keep the service alive

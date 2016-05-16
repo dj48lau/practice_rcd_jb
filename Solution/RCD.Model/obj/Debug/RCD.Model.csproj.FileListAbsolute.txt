@@ -79,3 +79,12 @@ D:\Work\PracticeRCD\Solution\RCD.Model\bin\Debug\EntityFramework.xml
 D:\Work\PracticeRCD\Solution\RCD.Model\bin\Debug\EntityFramework.SqlServer.xml
 D:\Work\PracticeRCD\Solution\RCD.Model\obj\Debug\RCD.Model.dll
 D:\Work\PracticeRCD\Solution\RCD.Model\obj\Debug\RCD.Model.pdb
+E:\.Net Trainning\laur\practice_jb\Solution\RCD.Model\bin\Debug\RCD.Model.dll.config
+E:\.Net Trainning\laur\practice_jb\Solution\RCD.Model\bin\Debug\RCD.Model.dll
+E:\.Net Trainning\laur\practice_jb\Solution\RCD.Model\bin\Debug\RCD.Model.pdb
+E:\.Net Trainning\laur\practice_jb\Solution\RCD.Model\bin\Debug\EntityFramework.dll
+E:\.Net Trainning\laur\practice_jb\Solution\RCD.Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\.Net Trainning\laur\practice_jb\Solution\RCD.Model\bin\Debug\EntityFramework.xml
+E:\.Net Trainning\laur\practice_jb\Solution\RCD.Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\.Net Trainning\laur\practice_jb\Solution\RCD.Model\obj\Debug\RCD.Model.dll
+E:\.Net Trainning\laur\practice_jb\Solution\RCD.Model\obj\Debug\RCD.Model.pdb
