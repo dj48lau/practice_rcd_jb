@@ -88,3 +88,4 @@ E:\.Net Trainning\laur\practice_jb\Solution\RCD.Model\bin\Debug\EntityFramework.
 E:\.Net Trainning\laur\practice_jb\Solution\RCD.Model\bin\Debug\EntityFramework.SqlServer.xml
 E:\.Net Trainning\laur\practice_jb\Solution\RCD.Model\obj\Debug\RCD.Model.dll
 E:\.Net Trainning\laur\practice_jb\Solution\RCD.Model\obj\Debug\RCD.Model.pdb
+E:\.Net Trainning\laur\practice_jb\Solution\RCD.Model\obj\Debug\RCD.Model.csprojResolveAssemblyReference.cache

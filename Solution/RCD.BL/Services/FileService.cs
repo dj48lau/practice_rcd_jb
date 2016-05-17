@@ -18,7 +18,7 @@ namespace RCD.BL.Services
         {
 
             var fileInfo = new FileInfo(destinationFile);
-
+            
             var file = new Model.File();
             file.Name = fileInfo.Name;
             file.Path = destinationFile;

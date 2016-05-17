@@ -55,7 +55,6 @@
     <Compile Include="Services\MetadataService.cs" />
     <Compile Include="Services\MetadataTypeService.cs" />
     <Compile Include="Utils\FileAction.cs" />
-    <Compile Include="Utils\EnumType.cs" />
     <Compile Include="Utils\Util.cs" />
   </ItemGroup>
   <ItemGroup>

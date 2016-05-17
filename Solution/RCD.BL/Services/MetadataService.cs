@@ -1,11 +1,8 @@
-﻿using RCD.BL.Utils;
+﻿
+using RCD.BL.Utils;
 using RCD.DAL.Repositories;
-using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RCD.BL.Services
 {
@@ -15,15 +12,42 @@ namespace RCD.BL.Services
         public static void AddMetadata(FileInfo fileInfo, int fileId)
         {
 
-            var metadata = new Model.Metadata();
-            metadata.Value = fileInfo.Length.ToString();
-            RepositoryMetadata.SaveMetadataToDb(metadata, GetMetadataTypeId("length"), fileId);
+            string ext = Util.GetFileExtension(fileInfo.Extension);
+
+            List<string> txt = new List<string> { "Length", "Name", "CreationTime", "IsReadOnly", "LastAccessTime", "LastWriteTime", "Attributes"};
+            List<string> jpg = new List<string> { "Length", "Name", "CreationTime", "IsReadOnly", "LastAccessTime", "LastWriteTime", "Attributes" };
+            List<string> pdf = new List<string> { "Length", "Name", "CreationTime", "IsReadOnly", "LastAccessTime", "LastWriteTime", "Attributes" };
+            //all the metadata extensions
+            Dictionary<string, List<string>> extensions = new Dictionary<string, List<string>>() {
+                { "txt", txt },
+                { "jpg", jpg},
+                { "pdf", pdf}
+            };
+
+            foreach (string metadataTypeName in extensions[ext])
+            {
+                var metadata = new Model.Metadata();
+                metadata.Value = ReflectPropertyValuefileInfo(fileInfo, metadataTypeName).ToString();
+
+                RepositoryMetadata.SaveMetadataToDb(metadata, GetMetadataTypeId(metadataTypeName), fileId);
+            }
 
         }
+
+        //get the value of the object property
+        private static object ReflectPropertyValuefileInfo(FileInfo source, string property)
+        {
+            return source.GetType().GetProperty(property).GetValue(source, null);
+        }
+        //----------------------------end added---------------------------
+
 
         public static int GetMetadataTypeId(string metadataTypeName)
         {
             return MetadataTypeService.GetMetadataTypeById(metadataTypeName);
         }
+
+      }
     }
-}
+
+
