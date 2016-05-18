@@ -90,3 +90,31 @@ E:\.Net Trainning\laur\practice_jb\Solution\RCD.DAL\obj\Debug\RCD.DAL.Migrations
 E:\.Net Trainning\laur\practice_jb\Solution\RCD.DAL\obj\Debug\RCD.DAL.csproj.GenerateResource.Cache
 E:\.Net Trainning\laur\practice_jb\Solution\RCD.DAL\obj\Debug\RCD.DAL.dll
 E:\.Net Trainning\laur\practice_jb\Solution\RCD.DAL\obj\Debug\RCD.DAL.pdb
+D:\microsoft\practice_rcd_jb\Solution\RCD.DAL\bin\Debug\RCD.DAL.dll.config
+D:\microsoft\practice_rcd_jb\Solution\RCD.DAL\bin\Debug\RCD.DAL.dll
+D:\microsoft\practice_rcd_jb\Solution\RCD.DAL\bin\Debug\RCD.DAL.pdb
+D:\microsoft\practice_rcd_jb\Solution\RCD.DAL\bin\Debug\EntityFramework.dll
+D:\microsoft\practice_rcd_jb\Solution\RCD.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\microsoft\practice_rcd_jb\Solution\RCD.DAL\bin\Debug\RCD.Model.dll
+D:\microsoft\practice_rcd_jb\Solution\RCD.DAL\bin\Debug\RCD.Model.pdb
+D:\microsoft\practice_rcd_jb\Solution\RCD.DAL\bin\Debug\EntityFramework.xml
+D:\microsoft\practice_rcd_jb\Solution\RCD.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\microsoft\practice_rcd_jb\Solution\RCD.DAL\obj\Debug\RCD.DAL.csprojResolveAssemblyReference.cache
+D:\microsoft\practice_rcd_jb\Solution\RCD.DAL\obj\Debug\RCD.DAL.Migrations.init_tbl.resources
+D:\microsoft\practice_rcd_jb\Solution\RCD.DAL\obj\Debug\RCD.DAL.csproj.GenerateResource.Cache
+D:\microsoft\practice_rcd_jb\Solution\RCD.DAL\obj\Debug\RCD.DAL.dll
+D:\microsoft\practice_rcd_jb\Solution\RCD.DAL\obj\Debug\RCD.DAL.pdb
+E:\.Net Trainning\andrei\Solution\RCD.DAL\bin\Debug\RCD.DAL.dll.config
+E:\.Net Trainning\andrei\Solution\RCD.DAL\bin\Debug\RCD.DAL.dll
+E:\.Net Trainning\andrei\Solution\RCD.DAL\bin\Debug\RCD.DAL.pdb
+E:\.Net Trainning\andrei\Solution\RCD.DAL\bin\Debug\EntityFramework.dll
+E:\.Net Trainning\andrei\Solution\RCD.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\.Net Trainning\andrei\Solution\RCD.DAL\bin\Debug\RCD.Model.dll
+E:\.Net Trainning\andrei\Solution\RCD.DAL\bin\Debug\RCD.Model.pdb
+E:\.Net Trainning\andrei\Solution\RCD.DAL\bin\Debug\EntityFramework.xml
+E:\.Net Trainning\andrei\Solution\RCD.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\.Net Trainning\andrei\Solution\RCD.DAL\obj\Debug\RCD.DAL.csprojResolveAssemblyReference.cache
+E:\.Net Trainning\andrei\Solution\RCD.DAL\obj\Debug\RCD.DAL.Migrations.init_tbl.resources
+E:\.Net Trainning\andrei\Solution\RCD.DAL\obj\Debug\RCD.DAL.csproj.GenerateResource.Cache
+E:\.Net Trainning\andrei\Solution\RCD.DAL\obj\Debug\RCD.DAL.dll
+E:\.Net Trainning\andrei\Solution\RCD.DAL\obj\Debug\RCD.DAL.pdb

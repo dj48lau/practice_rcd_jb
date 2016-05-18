@@ -10,6 +10,25 @@ namespace RCD.DAL.Repositories
     public class RepositoryMetadata
     {
 
+        public static List<Metadata> GetMetadataByType(int metadataTypeId)
+        {
+            using (var context = new ModelContext())
+            {
+
+                try
+                {
+                    return (from m in context.Metadata
+                           where m.MetadataType.MetadataTypeId == metadataTypeId
+                           select m).ToList();
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+            }
+        }
+
         public static void SaveMetadataToDb(Metadata metadata, int metadataId, int fileId)
         { 
             using (var context = new ModelContext())

@@ -27,5 +27,7 @@ namespace RCD.Model
 
         public virtual FileType FileType { get; set; }
 
+        public virtual List<Metadata> Metadata { get; set; }
+
     }
 }

@@ -89,3 +89,22 @@ E:\.Net Trainning\laur\practice_jb\Solution\RCD.Model\bin\Debug\EntityFramework.
 E:\.Net Trainning\laur\practice_jb\Solution\RCD.Model\obj\Debug\RCD.Model.dll
 E:\.Net Trainning\laur\practice_jb\Solution\RCD.Model\obj\Debug\RCD.Model.pdb
 E:\.Net Trainning\laur\practice_jb\Solution\RCD.Model\obj\Debug\RCD.Model.csprojResolveAssemblyReference.cache
+D:\microsoft\practice_rcd_jb\Solution\RCD.Model\bin\Debug\RCD.Model.dll.config
+D:\microsoft\practice_rcd_jb\Solution\RCD.Model\bin\Debug\RCD.Model.dll
+D:\microsoft\practice_rcd_jb\Solution\RCD.Model\bin\Debug\RCD.Model.pdb
+D:\microsoft\practice_rcd_jb\Solution\RCD.Model\bin\Debug\EntityFramework.dll
+D:\microsoft\practice_rcd_jb\Solution\RCD.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\microsoft\practice_rcd_jb\Solution\RCD.Model\bin\Debug\EntityFramework.xml
+D:\microsoft\practice_rcd_jb\Solution\RCD.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\microsoft\practice_rcd_jb\Solution\RCD.Model\obj\Debug\RCD.Model.dll
+D:\microsoft\practice_rcd_jb\Solution\RCD.Model\obj\Debug\RCD.Model.pdb
+E:\.Net Trainning\andrei\Solution\RCD.Model\bin\Debug\RCD.Model.dll.config
+E:\.Net Trainning\andrei\Solution\RCD.Model\bin\Debug\RCD.Model.dll
+E:\.Net Trainning\andrei\Solution\RCD.Model\bin\Debug\RCD.Model.pdb
+E:\.Net Trainning\andrei\Solution\RCD.Model\bin\Debug\EntityFramework.dll
+E:\.Net Trainning\andrei\Solution\RCD.Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\.Net Trainning\andrei\Solution\RCD.Model\bin\Debug\EntityFramework.xml
+E:\.Net Trainning\andrei\Solution\RCD.Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\.Net Trainning\andrei\Solution\RCD.Model\obj\Debug\RCD.Model.csprojResolveAssemblyReference.cache
+E:\.Net Trainning\andrei\Solution\RCD.Model\obj\Debug\RCD.Model.dll
+E:\.Net Trainning\andrei\Solution\RCD.Model\obj\Debug\RCD.Model.pdb
