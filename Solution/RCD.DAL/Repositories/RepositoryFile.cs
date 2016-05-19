@@ -76,5 +76,36 @@ namespace RCD.DAL
                 }
             }
         }
+
+        public static List<FileViewModel> GetFileByName(string fileName)
+        {
+
+            //join m in context.Metadata
+            //on f.FileId equals m.FileId
+            //join mt in context.MetadataTypes
+            //on m.MetadataTypeId equals mt.MetadataTypeId
+            //|| mt.Name == fileName
+
+            using (var context = new ModelContext())
+            {
+                try
+                {
+                    return (from f in context.Files
+                            join ft in context.FileTypes
+                            on f.FileType.FileTypeId equals ft.FileTypeId
+                            where f.Name == fileName || ft.Name == fileName 
+                            select new FileViewModel
+                            {
+                                FileId = f.FileId,
+                                FileName = f.Name,
+                                FileType = f.FileType.Name
+                            }).ToList();
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+            }
+        }
     }
 }

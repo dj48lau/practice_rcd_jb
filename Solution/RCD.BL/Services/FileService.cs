@@ -32,6 +32,6 @@ namespace RCD.BL.Services
             string extension = Util.GetFileExtension(fileInfo.FullName);
             return FileTypeService.GetFyleTypeId(extension);
         }
-                
+        
     }
 }

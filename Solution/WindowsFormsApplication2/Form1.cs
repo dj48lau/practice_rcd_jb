@@ -1,4 +1,5 @@
-﻿using RCD.DAL;
+﻿using RCD.BL.Services;
+using RCD.DAL;
 using RCD.DAL.Repositories;
 using RCD.DAL.ViewModel;
 using RCD.Model;
@@ -17,6 +18,7 @@ namespace RCD.FormWindows
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
@@ -25,11 +27,10 @@ namespace RCD.FormWindows
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var files = RepositoryFile.GetFileDetails();
             var creationDateId = RepositoryMetadataType.GetMetadataTypeByName(GetCreationDateName());
             var metadata = RepositoryMetadata.GetMetadataByType(creationDateId);
             Dictionary<int, string> metadataDictionary = SetMetadataDictionary(metadata);
-
+            var files = RepositoryFile.GetFileDetails();
             InitializeDataGridView(files, metadataDictionary);
 
         }
@@ -59,7 +60,7 @@ namespace RCD.FormWindows
             dataGridView.Columns[1].Name = "File Name";
             dataGridView.Columns[2].Name = "File Type";
             dataGridView.Columns[3].Name = "Creation Date";
-            
+
             foreach (var rowArray in files)
             {
                 string createDate = dictionary.ContainsKey(rowArray.FileId) ? dictionary[rowArray.FileId] : " - ";
@@ -67,7 +68,6 @@ namespace RCD.FormWindows
             }
           
         }
-
 
         private static string GetCreationDateName()
         {
@@ -86,16 +86,21 @@ namespace RCD.FormWindows
             return creationDate;
         }
 
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            var creationDateId = RepositoryMetadataType.GetMetadataTypeByName(GetCreationDateName());
+            var metadata = RepositoryMetadata.GetMetadataByType(creationDateId);
+            Dictionary<int, string> metadataDictionary = SetMetadataDictionary(metadata);
 
-
-
-
-
-
-
-
-
-
-
+            try
+            {
+               var files =  RepositoryFile.GetFileByName(text_search.Text);
+               InitializeDataGridView(files, metadataDictionary);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }

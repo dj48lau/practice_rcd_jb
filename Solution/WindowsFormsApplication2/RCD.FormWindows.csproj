@@ -92,6 +92,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\RCD.BL\RCD.BL.csproj">
+      <Project>{8A2D711B-A8D2-4AF5-B512-F7020BA78A75}</Project>
+      <Name>RCD.BL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RCD.DAL\RCD.DAL.csproj">
       <Project>{8e23303d-43fd-43f8-9cf9-31ab72e26465}</Project>
       <Name>RCD.DAL</Name>

@@ -88,7 +88,6 @@ E:\.Net Trainning\laur\practice_jb\Solution\RCD.Model\bin\Debug\EntityFramework.
 E:\.Net Trainning\laur\practice_jb\Solution\RCD.Model\bin\Debug\EntityFramework.SqlServer.xml
 E:\.Net Trainning\laur\practice_jb\Solution\RCD.Model\obj\Debug\RCD.Model.dll
 E:\.Net Trainning\laur\practice_jb\Solution\RCD.Model\obj\Debug\RCD.Model.pdb
-E:\.Net Trainning\laur\practice_jb\Solution\RCD.Model\obj\Debug\RCD.Model.csprojResolveAssemblyReference.cache
 D:\microsoft\practice_rcd_jb\Solution\RCD.Model\bin\Debug\RCD.Model.dll.config
 D:\microsoft\practice_rcd_jb\Solution\RCD.Model\bin\Debug\RCD.Model.dll
 D:\microsoft\practice_rcd_jb\Solution\RCD.Model\bin\Debug\RCD.Model.pdb
@@ -108,3 +107,13 @@ E:\.Net Trainning\andrei\Solution\RCD.Model\bin\Debug\EntityFramework.SqlServer.
 E:\.Net Trainning\andrei\Solution\RCD.Model\obj\Debug\RCD.Model.csprojResolveAssemblyReference.cache
 E:\.Net Trainning\andrei\Solution\RCD.Model\obj\Debug\RCD.Model.dll
 E:\.Net Trainning\andrei\Solution\RCD.Model\obj\Debug\RCD.Model.pdb
+D:\Work\Repository\practice_rcd_jb\Solution\RCD.Model\bin\Debug\RCD.Model.dll.config
+D:\Work\Repository\practice_rcd_jb\Solution\RCD.Model\bin\Debug\RCD.Model.dll
+D:\Work\Repository\practice_rcd_jb\Solution\RCD.Model\bin\Debug\RCD.Model.pdb
+D:\Work\Repository\practice_rcd_jb\Solution\RCD.Model\bin\Debug\EntityFramework.dll
+D:\Work\Repository\practice_rcd_jb\Solution\RCD.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Work\Repository\practice_rcd_jb\Solution\RCD.Model\bin\Debug\EntityFramework.xml
+D:\Work\Repository\practice_rcd_jb\Solution\RCD.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Work\Repository\practice_rcd_jb\Solution\RCD.Model\obj\Debug\RCD.Model.csprojResolveAssemblyReference.cache
+D:\Work\Repository\practice_rcd_jb\Solution\RCD.Model\obj\Debug\RCD.Model.dll
+D:\Work\Repository\practice_rcd_jb\Solution\RCD.Model\obj\Debug\RCD.Model.pdb
