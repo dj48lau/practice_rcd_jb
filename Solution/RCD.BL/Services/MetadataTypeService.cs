@@ -28,6 +28,13 @@ namespace RCD.BL.Services
                 metadataTypeId = AddMetadataType(metaTypeObj);
             }
             return metadataTypeId;
-        }   
+        }
+
+        public static int GetMetadataTypeByName(string metaType)
+        {
+            return RepositoryMetadataType.GetMetadataTypeByName(metaType);
+        }
+
+
     }
 }

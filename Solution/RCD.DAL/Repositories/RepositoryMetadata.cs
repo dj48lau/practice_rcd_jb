@@ -18,8 +18,8 @@ namespace RCD.DAL.Repositories
                 try
                 {
                     return (from m in context.Metadata
-                           where m.MetadataType.MetadataTypeId == metadataTypeId
-                           select m).ToList();
+                            where m.MetadataType.MetadataTypeId == metadataTypeId
+                            select m).ToList();
                 }
                 catch (Exception)
                 {

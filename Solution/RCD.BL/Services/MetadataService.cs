@@ -1,6 +1,7 @@
 ﻿
 using RCD.BL.Utils;
 using RCD.DAL.Repositories;
+using RCD.Model;
 using System.Collections.Generic;
 using System.IO;
 
@@ -39,14 +40,16 @@ namespace RCD.BL.Services
         {
             return source.GetType().GetProperty(property).GetValue(source, null);
         }
-        //----------------------------end added---------------------------
-
-
+        
         public static int GetMetadataTypeId(string metadataTypeName)
         {
             return MetadataTypeService.GetMetadataTypeById(metadataTypeName);
         }
 
+        public static List<Metadata> GetMetadataByType(int metadataTypeId)
+        {
+            return RepositoryMetadata.GetMetadataByType(metadataTypeId);
+        }
       }
     }
 

@@ -1,13 +1,8 @@
-﻿using RCD.BL;
-using RCD.BL.Utils;
+﻿using RCD.BL.Utils;
 using RCD.DAL;
-using RCD.Model;
-using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace RCD.BL.Services
 {
@@ -32,6 +27,20 @@ namespace RCD.BL.Services
             string extension = Util.GetFileExtension(fileInfo.FullName);
             return FileTypeService.GetFyleTypeId(extension);
         }
-        
+
+        public static List<DAL.ViewModel.FileViewModel> GetFileDetails()
+        {
+            return RepositoryFile.GetFileDetails();
+        }
+
+        public static List<DAL.ViewModel.FileViewModel> SearchFile(string searchedFile)
+        {
+            return RepositoryFile.SearchFile(searchedFile);
+        }
+
+        public static Model.File GetFile(int fileName)
+        {
+            return RepositoryFile.GetFile(fileName);
+        }
     }
 }
