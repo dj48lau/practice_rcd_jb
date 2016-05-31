@@ -90,7 +90,7 @@ namespace RCD.DAL
                             on f.FileId equals m.FileId
                             join mt in context.MetadataTypes
                             on m.MetadataTypeId equals mt.MetadataTypeId
-                            where f.Name == searchedFile || ft.Name == searchedFile || m.Value == searchedFile  
+                            where f.Name.Contains(searchedFile) || ft.Name.Contains(searchedFile) || m.Value.Contains(searchedFile)
                             select new FileViewModel
                             {
                                 FileId = f.FileId,

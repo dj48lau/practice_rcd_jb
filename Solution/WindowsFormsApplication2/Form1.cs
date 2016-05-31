@@ -21,17 +21,17 @@ namespace RCD.FormWindows
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var creationDateId = MetadataTypeService.GetMetadataTypeByName(GetCreationDateName());
-            var metadata = MetadataService.GetMetadataByType(creationDateId);
-
-            Dictionary<int, string> metadataDictionary = SetMetadataDictionary(metadata);
+            var metadataDictionary = CreateDateDictionary();
             var files = FileService.GetFileDetails();
             InitializeDataGridView(files, metadataDictionary);
 
         }
 
-        private Dictionary<int,string> SetMetadataDictionary(List<Metadata> metadata)
+        private Dictionary<int, string> CreateDateDictionary()
         {
+            var creationDateId = MetadataTypeService.GetMetadataTypeByName(GetCreationDateName());
+            var metadata = MetadataService.GetMetadataByType(creationDateId);
+
             Dictionary<int, string> dictionary = new Dictionary<int, string>();
             foreach (var met in metadata)
             {
@@ -40,8 +40,7 @@ namespace RCD.FormWindows
 
             return dictionary;
         }
-               
-              
+
         private void InitializeDataGridView(List<FileViewModel> files, Dictionary<int, string> dictionary)
         {
             dataGridView1.AutoSize = true;
@@ -82,10 +81,7 @@ namespace RCD.FormWindows
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            var creationDateId = MetadataTypeService.GetMetadataTypeByName(GetCreationDateName());
-            var metadata = MetadataService.GetMetadataByType(creationDateId);
-
-            Dictionary<int, string> metadataDictionary = SetMetadataDictionary(metadata);
+            var metadataDictionary = CreateDateDictionary();
 
             try
             {
