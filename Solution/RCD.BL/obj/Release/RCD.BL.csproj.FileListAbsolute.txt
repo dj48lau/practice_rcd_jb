@@ -1,0 +1,14 @@
+D:\Work\new_Repository\practice_rcd_jb\Solution\RCD.BL\bin\Release\RCD.BL.dll.config
+D:\Work\new_Repository\practice_rcd_jb\Solution\RCD.BL\bin\Release\RCD.BL.dll
+D:\Work\new_Repository\practice_rcd_jb\Solution\RCD.BL\bin\Release\RCD.BL.pdb
+D:\Work\new_Repository\practice_rcd_jb\Solution\RCD.BL\bin\Release\EntityFramework.dll
+D:\Work\new_Repository\practice_rcd_jb\Solution\RCD.BL\bin\Release\EntityFramework.SqlServer.dll
+D:\Work\new_Repository\practice_rcd_jb\Solution\RCD.BL\bin\Release\RCD.DAL.dll
+D:\Work\new_Repository\practice_rcd_jb\Solution\RCD.BL\bin\Release\RCD.Model.dll
+D:\Work\new_Repository\practice_rcd_jb\Solution\RCD.BL\bin\Release\RCD.DAL.pdb
+D:\Work\new_Repository\practice_rcd_jb\Solution\RCD.BL\bin\Release\RCD.Model.pdb
+D:\Work\new_Repository\practice_rcd_jb\Solution\RCD.BL\bin\Release\EntityFramework.xml
+D:\Work\new_Repository\practice_rcd_jb\Solution\RCD.BL\bin\Release\EntityFramework.SqlServer.xml
+D:\Work\new_Repository\practice_rcd_jb\Solution\RCD.BL\obj\Release\RCD.BL.csprojResolveAssemblyReference.cache
+D:\Work\new_Repository\practice_rcd_jb\Solution\RCD.BL\obj\Release\RCD.BL.dll
+D:\Work\new_Repository\practice_rcd_jb\Solution\RCD.BL\obj\Release\RCD.BL.pdb

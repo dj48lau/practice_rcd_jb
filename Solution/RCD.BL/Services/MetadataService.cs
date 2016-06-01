@@ -18,13 +18,20 @@ namespace RCD.BL.Services
             List<string> txt = new List<string> { "Length", "Name", "CreationTime", "IsReadOnly", "LastAccessTime", "LastWriteTime", "Attributes"};
             List<string> jpg = new List<string> { "Length", "Name", "CreationTime", "IsReadOnly", "LastAccessTime", "LastWriteTime", "Attributes" };
             List<string> pdf = new List<string> { "Length", "Name", "CreationTime", "IsReadOnly", "LastAccessTime", "LastWriteTime", "Attributes" };
+
+            //if the set of metadatas for the new extension does not exist in the database use the defaultList of metadata
+            List<string> defaultList = new List<string> { "Length", "Name", "CreationTime", "IsReadOnly", "LastAccessTime", "LastWriteTime", "Attributes"};
+
+
             //all the metadata extensions
             Dictionary<string, List<string>> extensions = new Dictionary<string, List<string>>() {
+       { "default", defaultList},
                 { "txt", txt },
                 { "jpg", jpg},
                 { "pdf", pdf}
-            };
 
+            };
+            ext = extensions.ContainsKey(ext) ? ext : "default";
             foreach (string metadataTypeName in extensions[ext])
             {
                 var metadata = new Model.Metadata();

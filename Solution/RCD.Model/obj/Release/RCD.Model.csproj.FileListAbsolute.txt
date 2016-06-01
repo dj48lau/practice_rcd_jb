@@ -1,0 +1,9 @@
+D:\Work\new_Repository\practice_rcd_jb\Solution\RCD.Model\bin\Release\RCD.Model.dll.config
+D:\Work\new_Repository\practice_rcd_jb\Solution\RCD.Model\bin\Release\RCD.Model.dll
+D:\Work\new_Repository\practice_rcd_jb\Solution\RCD.Model\bin\Release\RCD.Model.pdb
+D:\Work\new_Repository\practice_rcd_jb\Solution\RCD.Model\bin\Release\EntityFramework.dll
+D:\Work\new_Repository\practice_rcd_jb\Solution\RCD.Model\bin\Release\EntityFramework.SqlServer.dll
+D:\Work\new_Repository\practice_rcd_jb\Solution\RCD.Model\bin\Release\EntityFramework.xml
+D:\Work\new_Repository\practice_rcd_jb\Solution\RCD.Model\bin\Release\EntityFramework.SqlServer.xml
+D:\Work\new_Repository\practice_rcd_jb\Solution\RCD.Model\obj\Release\RCD.Model.dll
+D:\Work\new_Repository\practice_rcd_jb\Solution\RCD.Model\obj\Release\RCD.Model.pdb

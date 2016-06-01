@@ -1,0 +1,4 @@
+D:\Work\new_Repository\practice_rcd_jb\Solution\WindowsService1\obj\Release\RCD.WindowsService.csprojResolveAssemblyReference.cache
+D:\Work\new_Repository\practice_rcd_jb\Solution\WindowsService1\obj\Release\WindowsService1.ProjectInstaller.resources
+D:\Work\new_Repository\practice_rcd_jb\Solution\WindowsService1\obj\Release\RCD.WindowsService.csproj.GenerateResource.Cache
+D:\Work\new_Repository\practice_rcd_jb\Solution\WindowsService1\bin\Release\Netrom.WindowsService.exe.config

@@ -43,6 +43,7 @@ namespace RCD.FormWindows
 
         private void InitializeDataGridView(List<FileViewModel> files, Dictionary<int, string> dictionary)
         {
+            dataGridView1.Rows.Clear();
             dataGridView1.AutoSize = true;
 
             dataGridView1.ColumnCount = 4;
@@ -86,6 +87,7 @@ namespace RCD.FormWindows
             try
             {
                 var files =  FileService.SearchFile(text_search.Text);
+                text_search.Clear();
                 InitializeDataGridView(files, metadataDictionary);
             }
             catch (Exception)
